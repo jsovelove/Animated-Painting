@@ -1,0 +1,85 @@
+#painting {
+    height: 650px;
+    width: 650px;
+    background-color: #E7DDDB;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+    
+  }
+
+.red_triangle{
+    position: relative;
+    bottom: 520px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border: 300px solid transparent;
+    border-bottom: 300px solid red;
+    transform: rotate(-90deg) scale(400%);
+    z-index: 1;
+    
+}
+.black_triangle{
+    position: relative;
+    top: 10px;
+    right: 390px;
+    width: 0;
+    height: 0;
+    border: 300px solid transparent;
+    border-bottom: 300px solid black;
+    transform: rotate(-90deg) scale(120%);
+    z-index: 1;
+}
+.yellow_triangle{
+    position: relative;
+    bottom: 780px;
+    left: 30px;
+    right: 0;
+    width: 0;
+    border: 100px solid transparent;
+    border-bottom: 100px solid #c9c53c;
+    transform: rotate(90deg) scale(130%);
+}
+.grey_triangle1{
+    position: relative;
+    bottom: 1350px;
+    left: 420px;
+    right: 0;
+    width: 0;
+    border: 100px solid transparent;
+    border-bottom: 100px solid grey;
+    transform: rotate(180deg) scale(160%);
+}
+.grey_triangle2{
+    position: relative;
+    bottom: 1760px;
+    right: 220px;
+    width: 0;
+    border: 150px solid transparent;
+    border-bottom: 150px solid #CBCFE2;
+    transform: rotate(-45deg) scale(160%);
+}
+.grey_triangle3{
+    position: relative;
+    bottom: 1390px;
+    left: 400px;
+    width: 0;
+    border: 150px solid transparent;
+    border-bottom: 150px solid #CBCFE2;
+    transform: rotate(90deg) scale(200%);
+}
+
+a{
+    width: 10%;
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 20px 20px;
+    color: white;
+    background: black;
+    border-radius: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+  }

@@ -1,0 +1,181 @@
+.painting {
+    height: 650px;
+    width: 650px;
+    background-color: #E7DDDB;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    animation: PaintingRotate 16s infinite alternate;
+
+  }
+
+.red_triangle{
+    position: relative;
+    bottom: 520px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border: 300px solid transparent;
+    border-bottom: 300px solid red;
+    transform: rotate(-90deg) scale(400%);
+    z-index: 1;
+    animation: shiftto 4s infinite alternate;
+   
+
+    
+}
+.black_triangle{
+    position: relative;
+    top: 10px;
+    right: 390px;
+    width: 0;
+    height: 0;
+    border: 300px solid transparent;
+    border-bottom: 300px solid black;
+    transform: rotate(-90deg) scale(120%);
+    z-index: 1;
+    animation: shiftto2 4s infinite alternate forwards;
+
+}
+.yellow_triangle{
+    position: relative;
+    bottom: 780px;
+    left: 30px;
+    right: 0;
+    width: 0;
+    border: 100px solid transparent;
+    border-bottom: 100px solid #c9c53c;
+    transform: rotate(90deg) scale(130%);
+    animation: rotate3 4s infinite alternate forwards;
+
+
+}
+.grey_triangle1{
+    position: relative;
+    bottom: 1350px;
+    left: 420px;
+    right: 0;
+    width: 0;
+    border: 100px solid transparent;
+    border-bottom: 100px solid grey;
+    transform: rotate(180deg) scale(160%);
+    animation: size 4s infinite alternate forwards;
+
+}
+.grey_triangle2{
+    position: relative;
+    bottom: 1760px;
+    right: 220px;
+    width: 0;
+    border: 150px solid transparent;
+    border-bottom: 150px solid #CBCFE2;
+    transform: rotate(-45deg) scale(160%);
+    animation: rotate2 4s infinite alternate forwards;
+
+}
+.grey_triangle3{
+    position: relative;
+    bottom: 1390px;
+    left: 400px;
+    width: 0;
+    border: 150px solid transparent;
+    border-bottom: 150px solid #CBCFE2;
+    transform: rotate(90deg) scale(200%);
+    animation: rotate 4s infinite alternate forwards;
+}
+
+a{
+    width: 10%;
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 20px 20px;
+    color: white;
+    background: black;
+    border-radius: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  address a:hover{
+    transform: scale(1.1);
+  }
+
+@keyframes shiftto{
+    from{
+        right: -1000px;
+    }
+
+    to{
+        right: 30px;
+    }
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg) scale(80%)
+    }
+    to{
+        transform: rotate(90deg) scale(200%)
+    }
+}
+
+@keyframes shiftto2{
+    from{
+       right:0; 
+    }
+
+    to{
+        right: 390;
+    }
+}
+
+@keyframes size{
+    from{
+        bottom: 2000px;
+    }
+    to{
+        bottom: 1350px;    
+    }
+}
+@keyframes rotate2{
+    from{
+        transform: rotate(45deg) scale(260%); 
+
+    }
+    to{
+        transform: rotate(-45deg) scale(160%); 
+    }
+}
+@keyframes rotate3{
+    from{
+        transform: rotate(180deg) scale(50%); 
+        bottom: 200px;
+    }
+    to{
+        transform: rotate(90deg) scale(130%); 
+        bottom: 780px;
+
+    }
+}
+
+@keyframes PaintingRotate{
+    from{
+        transform: rotate(0deg); 
+    }
+    25%{
+        transform: rotate(90deg); 
+
+    }
+    50%{
+        transform: rotate(180deg); 
+
+    }
+    75%{
+        transform: rotate(270deg)
+    }
+    to{
+        transform: rotate(360deg); 
+        
+    }
+}
